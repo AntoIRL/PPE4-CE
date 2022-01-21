@@ -1,0 +1,38 @@
+CE : 
+	->Cadeaux de Noel
+		- Sélectionne en cours d’année un certain nombre de jouets ou cadeaux divers
+			-> Plusieurs fournisseurs
+		-Edite un catalogue
+		-Expédie à chaque parent salarié de l’entreprise un bulletin de réservation par enfant
+			->Ce bulletin de réservation est renvoyé au CE avec le choix du cadeau.
+		-Effectue les commandes aux fournisseurs et un chiffrage prévisionnel du coût.
+		-Cadeaux sont répartis, pour la distribution, dans les différentes permanences du comité d’entreprise 
+			-> Le salarié se rend alors dans la permanence de l’établissement dans lequel il travaille pour prendre possession des cadeaux choisis.
+
+		/* A noter que certains couples sont tous deux salariés dans l’entreprise, auquel cas l’enfant ne reçoit 
+		qu’un seul cadeau, au titre d’un des parents. Toutefois, il est utile d’identifier les couples dans la base 
+		de données pour faciliter la distribution des cadeaux. */
+
+
+
+	->Centres de vacances destinés aux enfants
+		-Au printemps, le CE édite un bulletin de réservation qui est envoyé aux parents
+			->Renvoyé au CE avec le choix du mois et du lieu de vacances (mer, montagne ou campagne), qui sont codifiés.
+		-Effectue la répartition des enfants en fonction du choix du lieu et du mois ainsi que de la tranche d’âge de l’enfant
+		-La réservation définitive est envoyée aux parents avec la facturation du séjour, calculée en fonction du tarif du centre choisi 
+		et de la tranche d’imposition des parents qui détermine éventuellement un abattement
+
+Gestion des utilisateurs : 
+
+	-> Les fonctions décrites précédemment peuvent se faire en ligne
+		-Création de commptes utilisateurs pour : 	1.les différents salariés
+							2.Les représentants du CE
+
+	1. -> droit de voir, modifier et consulter leurs réservations
+
+	2. 	->  Gérer les relations avec les fournisseurs (Les commandes auprès des fournisseurs, La comptabilité fournisseur incluant une prévision des coûts, La distribution des cadeaux aux 
+		différentes permanences du CE
+		->  Gérer relation avec les familles des salariés (Le choix des jouets ou des cadeaux, L’édition du catalogue de jouets, L’envoi du catalogue aux parents, La réservation des jouets par les 
+		parents, L’édition du bulletin de réservation pour les vacances, L’envoi de ce bulletin aux familles, La réception des bulletins par le CE, La répartition des enfants en fonction de leur 
+		choix, L’envoi de la répartition définitive aux parents et la facturation du séjour)
+
